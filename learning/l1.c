@@ -2,15 +2,18 @@
 #include <string.h>
 #include<stdbool.h>
 
+int lower(int c)
+{
+if (c >= 'A' && c <= 'Z')
+return c + 'a' - 'A';
+else
+return c;
+}
+
 int main(){
 
-    int n = 0;
 
-    while (n <= 0)
-    {
-        printf("num: ");
-        scanf("%d", &n);
-    }
+    lower(3);
     
     
 
